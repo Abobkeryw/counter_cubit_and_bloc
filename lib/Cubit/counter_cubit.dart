@@ -1,4 +1,4 @@
-import 'package:counter_bloc/counter_state.dart';
+import 'package:counter_bloc/Cubit/counter_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CounterCubit extends Cubit<CountercubitState> {
@@ -14,6 +14,9 @@ class CounterCubit extends Cubit<CountercubitState> {
 
   void reset() {
     emit(CountercubitState(counter: 0));
+  } 
+  void getnumber() {
+    state.getnumber();
   }
 
 }
